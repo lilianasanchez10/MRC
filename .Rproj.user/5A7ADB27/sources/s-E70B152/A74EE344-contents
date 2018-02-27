@@ -1,0 +1,31 @@
+devtools::install_github("jvcasillas/untidydata")
+devtools::install_github("jvcasillas/untidydata")
+devtools::install_github('yihui/xaringan')
+
+library(untidydata)
+library(xaringan)
+library(plot3D)
+library(tidyverse)
+
+str(language_diversity)
+head(language_diversity)
+unique(language_diversity$Measurement)
+language_diversity %>%
+
+ld <- language_diversity %>%
+  filter (., Continent == 'Africa') %>%
+  spread (., Measurement, Value) %>%
+  select (.,country = Country, pop = Population, area = Area, lang = Langs)%>%
+mutate(., logArea = log(area), logPop = log(pop))
+
+  
+hist(log(ld$area))
+hist(log(ld$pop))
+
+ld %>%
+  ggplot(.,aes(x =logPop, y = lang, color = logArea))+
+           geom_point()
+my_mod <- lm(lang ~logPOp + logArea, data = ld)
+my_int <- lm(lang ~ logPop +logArea +logPop:logArea, data = ld)
+summary(my-mod)
+summary(my_int)

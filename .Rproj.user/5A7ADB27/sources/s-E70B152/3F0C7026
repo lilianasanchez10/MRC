@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519751633427.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3F0C7026",
+    "lastKnownWriteTime" : 1519751572,
+    "last_content_update" : 1519751572,
+    "path" : "~/Desktop/MRC/MRC.Rmd",
+    "project_path" : "MRC.Rmd",
+    "properties" : {
+        "cursorPosition" : "11,35",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
